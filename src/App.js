@@ -1,9 +1,9 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css';
-import Dungeon from './component/Dungeon';
-import Village from './component/Village';
-import Mine from './component/Mine';
-import River from './component/River';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Dungeon from "./component/Dungeon";
+import Village from "./component/Village";
+import Mine from "./component/Mine";
+import River from "./component/River";
 
 function App() {
   return (

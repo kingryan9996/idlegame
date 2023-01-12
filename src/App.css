@@ -3,15 +3,35 @@
 }
 
 * {
-  font-size: 30px;
+  font-size: 30px; 
 }
-.village {
+a{text-decoration: none;}
+
+.page-layout {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80vh;
+  width: 700px;
+  margin: 8% auto;
+}
+
+.village-page {
   background-image: url(./img/Village.jpg);
-  height: 100vh;
+}
+.dungeon-page {
+  background-image: url(./img/Dungeon.jpg);
+}
+
+.mine-page {
+  background-image: url(./img/Mine.jpg);
+}
+
+.river-page {
+  background-image: url(./img/River.jpg);
 }
 
 .Village-enter{
-  width: 10%;
+  width: 13%;
   height: 50px;
   color: coral;
   border: 5px solid rgba(0, 0, 0, 0.7);
@@ -20,6 +40,40 @@
   justify-content: center;
   align-items: center;
 }
+
+.front-link {
+  background-color: blanchedalmond;
+  border: 5px solid rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 13%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dungeon-link{
+  color: coral;
+  top: 50%;
+  left: 0;
+  transform: translate(10%,-50%);
+}
+
+.mine-link{
+    color:brown;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(-10%,-50%);
+  
+}
+.river-link{
+    color: blue;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+}
+
 .dungeon-vil{
   position: fixed;
   top: 50%;
@@ -39,46 +93,36 @@
   left: 50%;
   transform: translate(-50%,50%);
 }
-
-.dungeon-front {
-  color: coral;
-  border: 5px solid rgba(0, 0, 0, 0.7);
-  background-color: blanchedalmond;
+.openreward.reward {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: reword;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.reward {
+  display: none;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 10px 10px;
+  width: 200px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
   position: fixed;
   top: 50%;
-  left: 0;
-  transform: translate(10%,-50%);
-}
-
-.dungeon-page {
-  background-image: url('./img/Dungeon.jpg');
-  height: 100vh;
-}
-
-.mine-front{
-  color:brown;
-  border: 5px solid rgba(0, 0, 0, 0.7);
-  background-color: blanchedalmond;
-  position: fixed;
-  top: 50%;
-  right: 0;
-  transform: translate(-10%,-50%);
-}
-.mine-page {
-  background-image: url(./img/Mine.jpg);
-  height: 100vh;
-}
-
-.river-front{
-  color: blue;
-  border: 5px solid rgba(0, 0, 0, 0.7);
-  background-color: blanchedalmond;
-  position: fixed;
-  bottom: 0;
   left: 50%;
   transform: translate(-50%,-50%);
 }
-.river-page {
-  background-image: url(./img/River.jpg);
-  height: 100vh;
+
+
+
+@keyframes reword {
+  0%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1);
+    display: none;
+  }
 }
