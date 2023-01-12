@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+* {
+  font-size: 30px;
+}
+.village {
+  background-image: url(./img/Village.jpg);
+  height: 100vh;
+}
+
+.Village-enter{
+  width: 10%;
+  height: 50px;
+  color: coral;
+  border: 5px solid rgba(0, 0, 0, 0.7);
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dungeon-vil{
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  transform: translate(-10%,-50%);
+}
+
+.mine-vil{
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  transform: translate(10%,-50%);
+}
+.river-vil{
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%,50%);
+}
+
+.dungeon-front {
+  color: coral;
+  border: 5px solid rgba(0, 0, 0, 0.7);
+  background-color: blanchedalmond;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translate(10%,-50%);
+}
+
+.dungeon-page {
+  background-image: url('./img/Dungeon.jpg');
+  height: 100vh;
+}
+
+.mine-front{
+  color:brown;
+  border: 5px solid rgba(0, 0, 0, 0.7);
+  background-color: blanchedalmond;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translate(-10%,-50%);
+}
+.mine-page {
+  background-image: url(./img/Mine.jpg);
+  height: 100vh;
+}
+
+.river-front{
+  color: blue;
+  border: 5px solid rgba(0, 0, 0, 0.7);
+  background-color: blanchedalmond;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.river-page {
+  background-image: url(./img/River.jpg);
+  height: 100vh;
+}
